@@ -21,7 +21,7 @@ def main():
 
     bot = telegram.bot(token=token)
 
-    updater = Updater(token, use_context=True)
+    updater = Updater(token=token, use_context=True)
 
     dispatcher = updater.dispatcher
 
