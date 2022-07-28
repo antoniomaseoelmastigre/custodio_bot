@@ -12,13 +12,14 @@ def newuser(update: Update, context: CallbackContext):
 
 #Start
 def start(update: Update, context: CallbackContext):
+    update.message.reply_text("Hola.")
     print("Un usuario inició el bot.")
 
 
 def main():
     token = os.environ["TOKEN"]
 
-    #bot = telegram.bot(token=token)
+    bot = telegram.bot(token=token)
 
     updater = Updater(token, use_context=True)
 
