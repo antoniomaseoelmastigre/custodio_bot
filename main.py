@@ -19,7 +19,7 @@ def start(update: Update, context: CallbackContext):
 def main():
     token = os.environ["TOKEN"]
 
-    bot = telegram.bot(token=token)
+    bot = telegram.Bot(token=token)
 
     updater = Updater(token=token, use_context=True)
 
